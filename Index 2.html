@@ -1,0 +1,32 @@
+<DOCTYPE html>
+    <head>
+        <!-- <link rel="style" href="text.css"> -->
+        <link rel="stylesheet" href="text.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Игра "Пятнашки"</h1>
+            <p>
+                Как и в настоящих пятнашках, в этих пятнашках можно переставлять любой элемент на свободное место. Но
+                я надеюсь на вашу честность. Ведь в этой игре жульничество не принесет никакого удовлетворения, т.к
+                смысл пятнашек совсем в другом.
+            </p>
+            <p>
+                Чтобы начать играть введите желаемый размер игрового поля и нажмите кнопку "Новая игра". После этого появится
+                поле, фишки на котором можно перетаскивать с помощью мыши.
+            </p>
+            <div class="game-field">
+                <label for="fieldSize">Размер игрового поля (min 2х2, max 6х6):</label>
+                <input type="number" min="2" max="6" id="fieldSize" value="4">
+                <button id="generateField">Новая игра</button>
+                <table id="myTable">
+                    <!--content to be here-->
+                </table>
+        
+            </div>
+            <canvas id="myCanvas" width="700" height="400"></canvas>
+        </div>
+        <script src="script.js"></script>
+    </body>
+ 
+</html>
